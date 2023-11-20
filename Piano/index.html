@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="playKeyboard.js" defer></script> 
+    <!-- Have defer to load after all body -->
+    <title>Piano</title>
+    
+
+    <!-- <script src="audiosynth.js"></script> -->
+    
+    <!-- <script type="text/javascript">playKeyboard()</script> -->
+
+</head>
+<body>
+   <div>
+    <div class="wrapper">
+        <header>
+            <h2>PLAYABLE PIANO</h2>
+            <div class="column volume-slider"> 
+                <!-- This is for volume slider -->
+            <span>Volume</span><input type="range" min="0" max="1" value="0.5" step="any">          
+            </div>
+
+            <div class="column keys-checkbox">
+                <span>Show Keys</span><input type="checkbox" checked>
+                <!-- This is for the show keys -->
+              </div>
+        </header>
+        <div class="piano-keys">
+            <div data-note="B" class="key white"></div>
+            <div data-note="C" class="key white"></div>
+            <div data-note="Db/C#"class="key black"></div>
+            <div data-note="D" class="key white"></div>
+            <div data-note="Eb/D#" class="key black"></div>
+            <div data-note="E"class="key white"></div>
+            <div data-note="F" class="key white"></div>
+            <div data-note="Gb/F#" class="key black"></div>
+            <div data-note="G" class="key white"></div>
+            <div data-note="Ab/G#" class="key black"></div>
+            <div data-note="A" class="key white"></div>
+            <div data-note="Bb/A#" class="key black"></div>
+            <div data-note="B" class="key white"></div>
+            <!-- Extra notes -->
+            <div data-note="C" class="key white"></div>
+            <div data-note="Db/C#"class="key black"></div>
+            <div data-note="D" class="key white"></div>
+            <div data-note="Eb/D#" class="key black"></div>
+            <div data-note="E"class="key white"></div>
+            <div data-note="F" class="key white"></div>
+            <div data-note="Gb/F#" class="key black"></div>
+            <div data-note="G" class="key white"></div>
+            <div data-note="Ab/G#" class="key black"></div>
+            <div data-note="A" class="key white"></div>
+            <div data-note="Bb/A#" class="key black"></div>
+            <div data-note="B" class="key white"></div>
+            <div data-note="C" class="key white"></div>
+
+            <audio id="B" src="notes/B.mp3"></audio>
+            <audio id="C" src="notes/C.mp3"></audio>
+            <audio id="Db/C#" src="notes/Db.mp3"></audio>
+            <audio id="D" src="notes/D.mp3"></audio>
+            <audio id="E" src="notes/E.mp3"></audio>
+            <audio id="Eb/D#" src="notes/Eb.mp3"></audio>
+            <audio id="F" src="notes/F.mp3"></audio>
+            <audio id="Gb" src="notes/Gb.mp3"></audio>
+            <audio id="G" src="notes/G.mp3"></audio>
+            <audio id="Ab/G#" src="notes/Ab.mp3"></audio>
+            <audio id="A" src="notes/A.mp3"></audio>
+            <audio id="Bb/A#" src="notes/Bb.mp3"></audio>
+            <audio id="B" src="notes/B.mp3"></audio>
+
+
+        </div>
+        <!-- <ul class="piano-keys">
+            <li class="key white" data-key="a"><span>a</span></li>
+            <li class="key black" data-key="w"><span>w</span></li>
+            <li class="key white" data-key="s"><span>s</span></li>
+            <li class="key black" data-key="e"><span>e</span></li>
+            <li class="key white" data-key="d"><span>d</span></li>
+            <li class="key white" data-key="f"><span>f</span></li>
+            <li class="key black" data-key="t"><span>t</span></li>
+            <li class="key white" data-key="g"><span>g</span></li>
+            <li class="key black" data-key="y"><span>y</span></li>
+            <li class="key white" data-key="h"><span>h</span></li>
+            <li class="key black" data-key="u"><span>u</span></li>
+            <li class="key white" data-key="j"><span>j</span></li>
+            <li class="key white" data-key="k"><span>k</span></li>
+            <li class="key black" data-key="o"><span>o</span></li>
+            <li class="key white" data-key="l"><span>l</span></li>
+            <li class="key black" data-key="p"><span>p</span></li>
+            <li class="key white" data-key=";"><span>;</span></li>
+          </ul> -->
+    </div>
+ 
+   </div> 
+</body>
+</html>
