@@ -160,3 +160,7 @@
 // 			39: 'B,1',
 		
 // 		};
+{/* <script src="vendor/jquery-1.7.2.min.js"></script>
+<script src="vendor/jquery-ui-1.8.20.custom.min.js"></script>  */}
+
+//copy of jquery script

@@ -1,80 +1,46 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script rel="stylesheet" href="my-88key-piano.css"></script>
+    <script src="https://code.jquery.com/jquery-9.6.7.min.js"></script>
+<script src="https://code.jquery.com/ui/9.6.7/jquery-ui.min.js"></script>
     <script src="my-88key piano.js"></script>
-    <script src="vendor/jquery-1.7.2.min.js"></script>
-    <script src="vendor/jquery-ui-1.8.20.custom.min.js"></script>  -->
-    <!-- <title>88 key piano</title>
-
+    <title>28-key Steinway-88 key piano</title> 
   </head>
 
   <body>
-    <audio
-      id="sound-A0"
-      src= "MakeInstruments/my-88key-piano/piano-88-notes copy/0-a.wav"
-      preload="auto"
-     
-    ></audio>
-    <div class="piano">
-      <noscript class="piano-javascript"
-        >This program requires Javascript and HTML5 Audio support.</noscript
-      >
-      <div class="piano-container">
-        <div class="piano-keys">
-          <div class="piano-white piano-A0"></div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html> -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="my-88key-piano.css"/> 
-    <script src="my-88key piano.js"></script>
-    <!-- <script src="vendor/jquery-1.7.2.min.js"></script>
-    <script src="vendor/jquery-ui-1.8.20.custom.min.js"></script> -->
-    <title>28-key Steinway</title>
-  </head>
-  <body>
-    <audio id="sound-A0" src="piano-88-notes copy/0-a.wav" preload="auto"></audio>
-    <audio id="sound-Bb2" src="samples/Bb2.ogg" preload="auto"></audio>
-    <audio id="sound-B2" src="samples/B2.ogg" preload="auto"></audio>
-    <audio id="sound-Ab3" src="samples/Ab3.ogg" preload="auto"></audio>
-    <audio id="sound-A3" src="samples/A3.ogg" preload="auto"></audio>
-    <audio id="sound-Bb3" src="samples/Bb3.ogg" preload="auto"></audio>
-    <audio id="sound-B3" src="samples/B3.ogg" preload="auto"></audio>
-    <audio id="sound-C3" src="samples/C3.ogg" preload="auto"></audio>
-    <audio id="sound-Db3" src="samples/Db3.ogg" preload="auto"></audio>
-    <audio id="sound-D3" src="samples/D3.ogg" preload="auto"></audio>
-    <audio id="sound-Eb3" src="samples/Eb3.ogg" preload="auto"></audio>
-    <audio id="sound-E3" src="samples/E3.ogg" preload="auto"></audio>
-    <audio id="sound-F3" src="samples/F3.ogg" preload="auto"></audio>
-    <audio id="sound-Gb3" src="samples/Gb3.ogg" preload="auto"></audio>
-    <audio id="sound-G3" src="samples/G3.ogg" preload="auto"></audio>
-    <audio id="sound-Ab4" src="samples/Ab4.ogg" preload="auto"></audio>
-    <audio id="sound-A4" src="samples/A4.ogg" preload="auto"></audio>
-    <audio id="sound-Bb4" src="samples/Bb4.ogg" preload="auto"></audio>
-    <audio id="sound-B4" src="samples/B4.ogg" preload="auto"></audio>
-    <audio id="sound-C4" src="samples/C4.ogg" preload="auto"></audio>
-    <audio id="sound-Db4" src="samples/Db4.ogg" preload="auto"></audio>
-    <audio id="sound-D4" src="samples/D4.ogg" preload="auto"></audio>
-    <audio id="sound-Eb4" src="samples/Eb4.ogg" preload="auto"></audio>
-    <audio id="sound-E4" src="samples/E4.ogg" preload="auto"></audio>
-    <audio id="sound-F4" src="samples/F4.ogg" preload="auto"></audio>
-    <audio id="sound-Gb4" src="samples/Gb4.ogg" preload="auto"></audio>
-    <audio id="sound-G4" src="samples/G4.ogg" preload="auto"></audio>
-    <audio id="sound-C5" src="samples/C5.ogg" preload="auto"></audio>
-    <div class="piano">
+    <audio>
+   <div class="piano">
       <noscript class="piano-javascript">This program requires Javascript and HTML5 Audio support.</noscript>
       <div class="piano-container">
         <div class="piano-keys">
-          <div class="piano-white piano-A2"></div>
+          <div class="piano-white piano-A0"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-As"> 
+          <!-- check on this As orAb? -->
+         
+          <div class="piano-white piano-B0"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
+          <div class="piano-white piano-C1"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
+          <div class="piano-white piano-D1"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
+          <div class="piano-white piano-E1"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
+          <div class="piano-white piano-F1"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
+          <div class="piano-white piano-G1"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
+          <div class="piano-white piano-A1"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
+          <div class="piano-white piano-B1"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
+
+          <!-- Need C2-B2 Right here, Fix black keys, and delete the double audio-->
+            <audio id="sound-A2"src="/MakeInstruments/my-88key-piano/piano-88-notes copy/0-as.wav" preload="auto"></audio>
+        <!-- <audio id="sound-A2"src="/MakeInstruments/my-88key-piano/piano-88-notes copy/fileA2goeshere" preload="auto"></audio> -->
           <div class="piano-black"><div class="piano-black-raised piano-Bb2"></div></div>
           <div class="piano-white piano-B2"></div>
           <div class="piano-white piano-C3"></div>
@@ -106,9 +72,52 @@
         <div class="piano-pedal">Just listen to that sustain!</div>
       </div>
     </div>
+            <!-- Piano keys go here --> 
+    <audio id="sound-A0" src="/MakeInstruments/my-88key-piano/piano-88-notes copy/0-a.wav" preload="auto"></audio>
+    
+    <audio id="sound-Bb2" src="/MakeInstruments/my-88key-piano/piano-88-notes copy/0-as.wav" preload="auto"></audio> 
+     <!-- "samples/Bb2.ogg"  -->
+    <audio id="sound-B2" src="samples/B2.ogg" preload="auto"></audio>
+    <audio id="sound-Ab3" src="samples/Ab3.ogg" preload="auto"></audio>
+    <audio id="sound-A3" src="samples/A3.ogg" preload="auto"></audio>
+    <audio id="sound-Bb3" src="samples/Bb3.ogg" preload="auto"></audio>
+    <!-- <audio id="sound-B3" src="samples/B3.ogg" preload="auto"></audio>
+    <audio id="sound-C3" src="samples/C3.ogg" preload="auto"></audio>
+    <audio id="sound-Db3" src="samples/Db3.ogg" preload="auto"></audio>
+    <audio id="sound-D3" src="samples/D3.ogg" preload="auto"></audio>
+    <audio id="sound-Eb3" src="samples/Eb3.ogg" preload="auto"></audio>
+    <audio id="sound-E3" src="samples/E3.ogg" preload="auto"></audio>
+    <audio id="sound-F3" src="samples/F3.ogg" preload="auto"></audio>
+    <audio id="sound-Gb3" src="samples/Gb3.ogg" preload="auto"></audio>
+    <audio id="sound-G3" src="samples/G3.ogg" preload="auto"></audio>
+    <audio id="sound-Ab4" src="samples/Ab4.ogg" preload="auto"></audio>
+    <audio id="sound-A4" src="samples/A4.ogg" preload="auto"></audio>
+    <audio id="sound-Bb4" src="samples/Bb4.ogg" preload="auto"></audio>
+    <audio id="sound-B4" src="samples/B4.ogg" preload="auto"></audio>
+    <audio id="sound-C4" src="samples/C4.ogg" preload="auto"></audio>
+    <audio id="sound-Db4" src="samples/Db4.ogg" preload="auto"></audio>
+    <audio id="sound-D4" src="samples/D4.ogg" preload="auto"></audio>
+    <audio id="sound-Eb4" src="samples/Eb4.ogg" preload="auto"></audio>
+    <audio id="sound-E4" src="samples/E4.ogg" preload="auto"></audio>
+    <audio id="sound-F4" src="samples/F4.ogg" preload="auto"></audio>
+    <audio id="sound-Gb4" src="samples/Gb4.ogg" preload="auto"></audio>
+    <audio id="sound-G4" src="samples/G4.ogg" preload="auto"></audio>
+    <audio id="sound-C5" src="samples/C5.ogg" preload="auto"></audio> -->
+          </div>
+        </div>
+      </div> 
+  </audio>
+          <!-- <div class="piano-white piano-A0"> this makes an extra key on top -->
+    </body>
+</html> 
+
+  
+   
+    
    
     <p style="text-align:center; font-size:smaller;">
       <a href="https://github.com/michaelmp/js-piano">source code</a>
     </p>
+  </script>
   </body>
 </html>
