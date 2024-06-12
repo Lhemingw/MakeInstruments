@@ -163,4 +163,7 @@
 {/* <script src="vendor/jquery-1.7.2.min.js"></script>
 <script src="vendor/jquery-ui-1.8.20.custom.min.js"></script>  */}
 
-//copy of jquery script
+//copy of jquery script from html page
+// <!-- <div id="keyboard" class="keyboard">
+// <div class="key" onclick="handleKey('piano-A0')">A0</div>
+// <div class="key" onclick="handleKey('piano-B0')">B0</div>

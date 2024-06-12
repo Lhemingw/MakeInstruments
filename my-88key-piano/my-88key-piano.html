@@ -12,16 +12,43 @@
   </head>
 
   <body>
-    <audio>
+    <button id="button1" type="button">C Major Chord</button>
+  
+      <!-- Add more keys as needed -->
+    <!-- <audio> -->
    <div class="piano">
       <noscript class="piano-javascript">This program requires Javascript and HTML5 Audio support.</noscript>
       <div class="piano-container">
         <div class="piano-keys">
-          <div class="piano-white piano-A0"></div>
-          <div class="piano-black"><div class="piano-black-raised piano-As"> 
+          <div class="piano-white" onclick="playSound('A0')">A0</div>
+                <div class="piano-black piano-raised" onclick="playSound('As0')"></div>
+
+                <div class="piano-white" onclick="playSound('B0')">B0</div>
+                <div class="piano-white" onclick="playSound('C1')">C1</div>
+
+                <div class="piano-black piano-raised" onclick="playSound('Cs1')"></div>
+                <div class="piano-white" onclick="playSound('D1')">D1</div>
+                <div class="piano-black piano-raised" onclick="playSound('Ds1')"></div>
+                <div class="piano-white" onclick="playSound('E1')">E1</div>
+                <div class="piano-white" onclick="playSound('F1')">F1</div>
+                <div class="piano-black piano-raised" onclick="playSound('Fs1')"></div>
+                <div class="piano-white" onclick="playSound('G1')">G1</div>
+                <div class="piano-black piano-raised" onclick="playSound('Gs1')"></div>
+                <div class="piano-white" onclick="playSound('A1')">A1</div>
+                <div class="piano-black piano-raised" onclick="playSound('As1')"></div>
+                <div class="piano-white" onclick="playSound('B1')">B1</div>
+                <div class="piano-white" onclick="playSound('C2')">C2</div>
+                <div class="piano-black piano-raised" onclick="playSound('Cs2')"></div>
+                <!-- Add more keys as needed -->
+            </div>
+        </div>
+
+
+          <!-- <div class="piano-white piano-A0"></div>
+          <div class="piano-black"><div class="piano-black-raised piano-As">  -->
           <!-- check on this As orAb? -->
          
-          <div class="piano-white piano-B0"></div>
+          <!-- <div class="piano-white piano-B0"></div>
           <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
           <div class="piano-white piano-C1"></div>
           <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
@@ -36,10 +63,10 @@
           <div class="piano-white piano-A1"></div>
           <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
           <div class="piano-white piano-B1"></div>
-          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div>
+          <div class="piano-black"><div class="piano-black-raised piano-Gb3"></div></div> -->
 
           <!-- Need C2-B2 Right here, Fix black keys, and delete the double audio-->
-            <audio id="sound-A2"src="/MakeInstruments/my-88key-piano/piano-88-notes copy/0-as.wav" preload="auto"></audio>
+            <!-- <audio id="sound-A2"src="/MakeInstruments/my-88key-piano/piano-88-notes copy/0-as.wav" preload="auto"></audio> -->
         <!-- <audio id="sound-A2"src="/MakeInstruments/my-88key-piano/piano-88-notes copy/fileA2goeshere" preload="auto"></audio> -->
           <div class="piano-black"><div class="piano-black-raised piano-Bb2"></div></div>
           <div class="piano-white piano-B2"></div>
@@ -73,51 +100,37 @@
       </div>
     </div>
             <!-- Piano keys go here --> 
-    <audio id="sound-A0" src="/MakeInstruments/my-88key-piano/piano-88-notes copy/0-a.wav" preload="auto"></audio>
+            <!--Audio Elements-->
+     <audio>    
+    <audio id="sound-A0" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/0-a.wav" preload="auto"></audio>
+    <audio id="sound-As0" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/0-as.wav" preload="auto"></audio>
+    <audio id="sound-B0" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/0-b.wav" preload="auto"></audio>
+    <audio id="sound-C1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-c.wav" preload="auto"></audio>
+    <audio id="sound-Cs1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-cs.wav" preload="auto"></audio>
+    <audio id="sound-D1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-d.wav" preload="auto"></audio>
+    <audio id="sound-Ds1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-ds.wav" preload="auto"></audio>
+    <audio id="sound-E1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-e.wav" preload="auto"></audio>
+    <audio id="sound-F1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-f.wav" preload="auto"></audio>
+    <audio id="sound-Fs1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-fs.wav" preload="auto"></audio>
+    <audio id="sound-G1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-g.wav" preload="auto"></audio>
+    <audio id="sound-Gs1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-gs.wav" preload="auto"></audio>
+    <audio id="sound-A1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-a.wav" preload="auto"></audio>
+    <audio id="sound-As1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-as.wav" preload="auto"></audio>
+    <audio id="sound-B1" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/1-b.wav" preload="auto"></audio>
+    <audio id="sound-C2" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/2-c.wav" preload="auto"></audio>
+    <audio id="sound-Cs2" src="/Users/Lucinda/Desktop/Code-Projects/MakeInstruments/my-88key-piano/piano-88-notes_copy/2-cs.wav" preload="auto"></audio>
+    <!-- Add more audio elements as needed -->
+
     
-    <audio id="sound-Bb2" src="/MakeInstruments/my-88key-piano/piano-88-notes copy/0-as.wav" preload="auto"></audio> 
-     <!-- "samples/Bb2.ogg"  -->
-    <audio id="sound-B2" src="samples/B2.ogg" preload="auto"></audio>
-    <audio id="sound-Ab3" src="samples/Ab3.ogg" preload="auto"></audio>
-    <audio id="sound-A3" src="samples/A3.ogg" preload="auto"></audio>
-    <audio id="sound-Bb3" src="samples/Bb3.ogg" preload="auto"></audio>
-    <!-- <audio id="sound-B3" src="samples/B3.ogg" preload="auto"></audio>
-    <audio id="sound-C3" src="samples/C3.ogg" preload="auto"></audio>
-    <audio id="sound-Db3" src="samples/Db3.ogg" preload="auto"></audio>
-    <audio id="sound-D3" src="samples/D3.ogg" preload="auto"></audio>
-    <audio id="sound-Eb3" src="samples/Eb3.ogg" preload="auto"></audio>
-    <audio id="sound-E3" src="samples/E3.ogg" preload="auto"></audio>
-    <audio id="sound-F3" src="samples/F3.ogg" preload="auto"></audio>
-    <audio id="sound-Gb3" src="samples/Gb3.ogg" preload="auto"></audio>
-    <audio id="sound-G3" src="samples/G3.ogg" preload="auto"></audio>
-    <audio id="sound-Ab4" src="samples/Ab4.ogg" preload="auto"></audio>
-    <audio id="sound-A4" src="samples/A4.ogg" preload="auto"></audio>
-    <audio id="sound-Bb4" src="samples/Bb4.ogg" preload="auto"></audio>
-    <audio id="sound-B4" src="samples/B4.ogg" preload="auto"></audio>
-    <audio id="sound-C4" src="samples/C4.ogg" preload="auto"></audio>
-    <audio id="sound-Db4" src="samples/Db4.ogg" preload="auto"></audio>
-    <audio id="sound-D4" src="samples/D4.ogg" preload="auto"></audio>
-    <audio id="sound-Eb4" src="samples/Eb4.ogg" preload="auto"></audio>
-    <audio id="sound-E4" src="samples/E4.ogg" preload="auto"></audio>
-    <audio id="sound-F4" src="samples/F4.ogg" preload="auto"></audio>
-    <audio id="sound-Gb4" src="samples/Gb4.ogg" preload="auto"></audio>
-    <audio id="sound-G4" src="samples/G4.ogg" preload="auto"></audio>
-    <audio id="sound-C5" src="samples/C5.ogg" preload="auto"></audio> -->
-          </div>
         </div>
       </div> 
   </audio>
           <!-- <div class="piano-white piano-A0"> this makes an extra key on top -->
-    </body>
-</html> 
-
-  
-   
-    
-   
-    <p style="text-align:center; font-size:smaller;">
+     <p style="text-align:center; font-size:smaller;">
       <a href="https://github.com/michaelmp/js-piano">source code</a>
-    </p>
+      </p>
+    </body>
   </script>
   </body>
-</html>
+</html> 
+  

@@ -10,4 +10,138 @@
         'A7','Bb7/A#7','B7','C8'
        
     ]
+    function handleKey(value) {
+        // You can perform actions based on the key value here
+        console.log('Key pressed:', value);}
+    
+        // For a real application, you might want to perform other actions (e.g., update an input field)
+        function playSound(note) {
+            var audioElement = document.getElementById('sound-' + note);
+            if (audioElement) {
+                audioElement.currentTime = 0;
+                audioElement.play();
+            }
+        }
+        
+             /* Manually diminish the volume when the key is not sustained. */
+  /* These values are hand-selected for a pleasant fade-out quality. */
+  
+//   function fade(key) {
+//     var audio = sound(key);
+//     var stepfade = function() {
+//       if (audio) {
+//         if (audio.volume < 0.03) {
+//           kill(key)();
+//         } else {
+//           if (audio.volume > 0.2) {
+//             audio.volume = audio.volume * 0.95;
+//           } else {
+//             audio.volume = audio.volume - 0.01;
+//           }
+//         }
+//       }
+//     };
+//     return function() {
+//       clearInterval(intervals[key]);
+//       intervals[key] = setInterval(stepfade, 5);
+//     };
+//   };
+
+//   /* Bring a key to an immediate halt. */
+  
+//   function kill(key) {
+//     var audio = sound(key);
+//     return function() {
+//       clearInterval(intervals[key]);
+//       if (audio) {
+//         audio.pause();
+//       }
+//       if (key.length > 2) {
+//         $(pianoClass(key)).animate({
+//           'backgroundColor': 'black'
+//         }, 300, 'easeOutExpo');
+//       } else {
+//         $(pianoClass(key)).animate({
+//           'backgroundColor': 'white'
+//         }, 300, 'easeOutExpo');
+//       }
+//     };
+//   };
+
+//   /* Simulate a gentle release, as opposed to hard stop. */
+  
+//   var fadeout = true;
+
+//   /* Sustain pedal, toggled by user. */
+  
+//   var sustaining = false;
+
+//   /* Register mouse event callbacks. */
+  
+//   keys.forEach(function(key) {
+//     $(pianoClass(key)).mousedown(function() {
+//       $(pianoClass(key)).animate({
+//         'backgroundColor': '#88FFAA'
+//       }, 0);
+//       press(key);
+//     });
+//     if (fadeout) {
+//       $(pianoClass(key)).mouseup(function() {
+//         depressed[key] = false;
+//         if (!sustaining) {
+//           fade(key)();
+//         }
+//       });
+//     } else {
+//       $(pianoClass(key)).mouseup(function() {
+//         depressed[key] = false;
+//         if (!sustaining) {
+//           kill(key)();
+//         }
+//       });
+//     }
+//   });
+
+//   /* Register keyboard event callbacks. */
+  
+//   $(document).keydown(function(event) {
+//     if (event.which === pedal) {
+//       sustaining = true;
+//       $(pianoClass('pedal')).addClass('piano-sustain');
+//     }
+//     press(keydown(event.which));
+//   });
+  
+//   $(document).keyup(function(event) {
+//     if (event.which === pedal) {
+//       sustaining = false;
+//       $(pianoClass('pedal')).removeClass('piano-sustain');
+//       Object.keys(depressed).forEach(function(key) {
+//         if (!depressed[key]) {
+//           if (fadeout) {
+//             fade(key)();
+//           } else {
+//             kill(key)();
+//           }
+//         }
+//       });
+//     }
+//     if (keyup(event.which)) {
+//       depressed[keyup(event.which)] = false;
+//       if (!sustaining) {
+//         if (fadeout) {
+//           fade(keyup(event.which))();
+//         } else {
+//           kill(keyup(event.which))();
+//         }
+//       }
+//     }
+//   });
+
+// })();
+
+        
+    
+
+    
 })
